@@ -39,12 +39,10 @@ You can also specify the input and output directories as command-line arguments.
 
 ## Citation
 ```
-@misc{min2019tasednet,
-    title={TASED-Net: Temporally-Aggregating Spatial Encoder-Decoder Network for Video Saliency Detection},
-    author={Kyle Min and Jason J. Corso},
-    year={2019},
-    eprint={1908.05786},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+@article{min2019tased,
+  title={TASED-Net: Temporally-Aggregating Spatial Encoder-Decoder Network for Video Saliency Detection},
+  author={Min, Kyle and Corso, Jason J},
+  journal={arXiv preprint arXiv:1908.05786},
+  year={2019}
 }
 ```
