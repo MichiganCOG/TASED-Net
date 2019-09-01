@@ -6,6 +6,16 @@ TASED-Net is a novel fully-convolutional network architecture for video saliency
 
 TASED-Net is currently leading the leaderboard of [DHF1K online benchmark](https://mmcheng.net/videosal/).
 
+| Model | Year | &nbsp; NSS&#8593; &nbsp; | &nbsp; CC &#8593; &nbsp; | &nbsp; SIM&#8593; &nbsp; | AUC-J&#8593; | s-AUC&#8593; |
+|:-------------|:--------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [TASED-Net](https://arxiv.org/abs/1908.05786) &nbsp; | 2019 | 2.667 | 0.470 | 0.361 | 0.895 | 0.712 |
+| [SalEMA](https://arxiv.org/abs/1907.01869) | 2019 | 2.574 | 0.449 | 0.466 | 0.890 | 0.667 |
+| [STRA-Net](https://www.ncbi.nlm.nih.gov/pubmed/31449021) | 2019 | 2.558 | 0.458 | 0.355 | 0.895 | 0.663 |
+| [ACLNet](https://arxiv.org/abs/1801.07424) | 2018 | 2.354 | 0.434 | 0.315 | 0.890 | 0.601 |
+| [SalGAN](https://arxiv.org/abs/1701.01081) | 2017 | 2.043 | 0.370 | 0.262 | 0.866 | 0.709 |
+| SALICON | 2015 | 1.901 | 0.327 | 0.232 | 0.857 | 0.590 |
+| GBVS | 2007 | 1.474 | 0.283 | 0.186 | 0.828 | 0.554 |
+
 ## Video Saliency Detection
 Video saliency detection aims to model the gaze fixation patterns of humans when viewing a dynamic scene. Because the predicted saliency map can be used to prioritize the video information across space and time, this task has a number of applications such as video surveillance, video captioning, video compression, etc.
 
