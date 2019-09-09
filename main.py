@@ -45,6 +45,7 @@ def main():
 
     model = model.cuda()
     torch.backends.cudnn.benchmark = False
+    model.eval()
 
     # iterate over the path_indata directory
     list_indata = [d for d in os.listdir(path_indata) if os.path.isdir(os.path.join(path_indata, d))]
