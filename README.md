@@ -1,5 +1,5 @@
 # TASED-Net
-[TASED-Net: Temporally-Aggregating Spatial Encoder-Decoder for Video Saliency Detection (ICCV 2019)](https://arxiv.org/abs/1908.05786)
+[TASED-Net: Temporally-Aggregating Spatial Encoder-Decoder Network for Video Saliency Detection (ICCV 2019)](https://arxiv.org/abs/1908.05786)
 
 ## Overview
 TASED-Net is a novel fully-convolutional network architecture for video saliency detection. The main idea is simple but effective: spatially decoding 3D video features while jointly aggregating all the temporal information. TASED-Net significantly outperforms previous state-of-the-art approaches on all three major large-scale datasets of video saliency detection: DHF1K, Hollywood2, and UCFSports. We observe that our model is especially better at attending to salient moving objects.
