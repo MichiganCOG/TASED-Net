@@ -29,7 +29,7 @@ We compare our TASED-Net to [ACLNet](https://arxiv.org/abs/1801.07424), which wa
 
 ## Code Usage
 First, clone this repository and download [this weight
-file](https://drive.google.com/uc?export=download&id=11DLJkuhRHHdRziYc2dQBiyPzf6QGn041).
+file](https://drive.google.com/uc?export=download&id=1pn_ioHdeUzBcX7FBTP8S0f_Ebxpp1Hlf).
 Then, just run the code using
 
 `$ python run_example.py`

@@ -19,7 +19,7 @@ def main():
         os.makedirs(path_output)
 
     len_temporal = 32
-    file_weight = './TASED_v2.pt'
+    file_weight = './TASED_updated.pt'
 
     model = TASED_v2()
 
