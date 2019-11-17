@@ -8,7 +8,8 @@ TASED-Net is currently leading the leaderboard of [DHF1K online benchmark](https
 
 | Model | Year | &nbsp; NSS&#8593; &nbsp; | &nbsp; CC &#8593; &nbsp; | &nbsp; SIM&#8593; &nbsp; | AUC-J&#8593; | s-AUC&#8593; |
 |:-------------|:--------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| [TASED-Net](http://openaccess.thecvf.com/content_ICCV_2019/html/Min_TASED-Net_Temporally-Aggregating_Spatial_Encoder-Decoder_Network_for_Video_Saliency_Detection_ICCV_2019_paper.html) &nbsp; | 2019 | 2.667 | 0.470 | 0.361 | 0.895 | 0.712 |
+| [TASED-Net (updated)](https://arxiv.org/abs/1908.05786) &nbsp; | 2019 | 2.797 | 0.489 | 0.393 | 0.897 | 0.712 |
+| [TASED-Net (reported)](http://openaccess.thecvf.com/content_ICCV_2019/html/Min_TASED-Net_Temporally-Aggregating_Spatial_Encoder-Decoder_Network_for_Video_Saliency_Detection_ICCV_2019_paper.html) &nbsp; | 2019 | 2.667 | 0.470 | 0.361 | 0.895 | 0.712 |
 | [SalEMA](https://arxiv.org/abs/1907.01869) | 2019 | 2.574 | 0.449 | 0.466 | 0.890 | 0.667 |
 | [STRA-Net](https://www.ncbi.nlm.nih.gov/pubmed/31449021) | 2019 | 2.558 | 0.458 | 0.355 | 0.895 | 0.663 |
 | [ACLNet](https://arxiv.org/abs/1801.07424) | 2018 | 2.354 | 0.434 | 0.315 | 0.890 | 0.601 |
@@ -39,7 +40,7 @@ You can also specify the input and output directories as command-line arguments.
 `$ python run_example.py ./example ./output`
 
 ## Notes
-- We observed that there is a trade-off between AUC scores and the others. The released model is a modified version to increase AUC-J and s-AUC scores (NSS, CC, and SIM scores are slightly lower than the reported figures). This version achieves 0.898 AUC-J and 0.716 s-AUC on the test set of DHF1K (2.621 NSS, 0.466 CC, 0.336 SIM).
+- The released model is a modified version to increase the performance. The updated results are reported above.
 
 - We recommend using PNG image files as input (although examples of this repository are in JPEG format).
 
