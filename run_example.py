@@ -75,7 +75,7 @@ def main():
 
                     # process first (len_temporal-1) frames
                     if i < 2*len_temporal-2:
-                        process(model, torch.flip(clip, [1]), path_outdata, i-len_temporal+1)
+                        process(model, torch.flip(clip, [2]), path_outdata, i-len_temporal+1)
 
                     del snippet[0]
 

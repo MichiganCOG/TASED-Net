@@ -81,7 +81,7 @@ def main():
     torch.backends.cudnn.benchmark = False
     model.train()
 
-    train_loader = InfiniteDataLoader(DHF1KDataset(path_indata, len_temporal), batch_size=batch_size, shuffle=True, num_workers=24)
+    train_loader = InfiniteDataLoader(DHF1KDataset(path_indata, len_temporal), batch_size=batch_size, shuffle=True, num_workers=8)
 
     i, step = 0, 0
     loss_sum = 0

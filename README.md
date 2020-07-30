@@ -46,11 +46,11 @@ You can also specify the input and output directories as command-line arguments.
 
 - For the encoder of TASED-Net, we use the [S3D network](https://arxiv.org/abs/1712.04851). We pretrained S3D on Kinetics-400 dataset using PyTorch and it achieves 72.08% top1 accuracy (top5: 90.35%) on the validation set of the dataset. We release [our weight file for S3D](https://github.com/kylemin/S3D.git) together this project. If you find it useful, you might want to consider citing our work.
 
-- For training, we recommend using [ViP](https://github.com/MichiganCOG/ViP.git), which is the video platform for general purposes in PyTorch. Otherwise, you can use `run_train.py`. Before running the training code, make sure to download [our weight file for S3D](https://github.com/kylemin/S3D.git).
+- **For training**, we recommend using [ViP](https://github.com/MichiganCOG/ViP.git), which is the video platform for general purposes in PyTorch. Otherwise, you can just use `run_train.py`. Before running the training code, make sure to download [our weight file for S3D](https://github.com/kylemin/S3D.git).
 
 
 ## Citation
-```
+```bibtex
 @inproceedings{min2019tased,
   title={TASED-Net: Temporally-Aggregating Spatial Encoder-Decoder Network for Video Saliency Detection},
   author={Min, Kyle and Corso, Jason J},
