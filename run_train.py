@@ -91,7 +91,7 @@ def main():
             output = model(clip.cuda())
             loss = criterion(output, annt.cuda())
 
-        loss_sum += loss.item()
+        loss_sum += loss.detach().item()
         loss.backward()
         if (i+1) % pile == 0:
             optimizer.step()

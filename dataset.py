@@ -46,7 +46,7 @@ class DHF1KDataset(Dataset):
 
         return transform(clip), torch.from_numpy(annt.copy()).contiguous().float()
 
-# from gist.github.com/MFreidank/821cc87b012c53fade03b0c7aba13958
+# Reference: gist.github.com/MFreidank/821cc87b012c53fade03b0c7aba13958
 class InfiniteDataLoader(DataLoader):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -62,3 +62,19 @@ class InfiniteDataLoader(DataLoader):
             self.dataset_iterator = super().__iter__()
             batch = next(self.dataset_iterator)
         return batch
+
+# ** Update **
+# Please consider using the following sampler during training instead of the above InfiniteDataLoader.
+# You can simply refer to: https://github.com/MichiganCOG/Gaze-Attention
+# Reference: https://github.com/facebookresearch/detectron2
+class trainingSampler(torch.utils.data.sampler.Sampler):
+    def __init__(self, size):
+        self.size = size
+
+    def _infinite_indices(self):
+        g = torch.Generator()
+        while True:
+            yield from torch.randperm(self.size, generator=g)
+
+    def __iter__(self):
+        yield from itertools.islice(self._infinite_indices(), 0, None, 1)
